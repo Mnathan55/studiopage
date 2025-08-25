@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
               key={index}
               className="choose-box flex flex-col items-center text-center p-6 bg-white border border-black rounded-xl hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[4px_4px_0_1px_#000] transition-shadow duration-200"
             >
-              <div className="text-indigo-600 mb-4">{point.icon}</div>
+              <div className="text-[#ff4500] mb-4">{point.icon}</div>
               <h3 className="text-lg text-black font-semibold">{point.title}</h3>
             </div>
           ))}

@@ -28,8 +28,6 @@ const Loader = () => {
     "BLOCKCHAIN DEVELOPMENT",
     "AI Development Services",
     "Game Development",
-    "Crypto Exchange Development",
-    "Web3 Development",
     "Web Design And Development",
     "iOS & Android App Development",
   ];

@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Left side content */}
       <div className="h-full w-full py-5 px-6 md:px-16 flex flex-col md:flex-row justify-between z-10">
         <div className="md:w-2/3 space-y-4 md:space-y-4 md:pr-12 mt-0 md:mt-[10%] z-20">
-          <p className="text-indigo-600 font-semibold text-base md:text-lg tracking-wide">
+          <p className="text-black font-semibold text-base md:text-lg tracking-wide">
             Engineering Excellence & Strategic Consulting
           </p>
           <div className="flex flex-col gap-4">
@@ -21,9 +21,9 @@ const HeroSection = () => {
             </p>
           </div>
           <div className="flex flex-row sm:flex-row gap-4 pt-2">
-            <button className="bg-blue-600 text-white px-2 md:px-8 py-1 md:py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-200 font-semibold text-base">
+            <a href="/contact" className="bg-[#ff4500] text-white px-2 md:px-8 py-1 md:py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-200 font-semibold text-base">
               Start Your Project
-            </button>
+            </a>
             {/* <button className="bg-white border border-gray-300 text-gray-800 px-8 py-3 rounded-lg shadow hover:bg-gray-100 transition duration-200 font-semibold text-base">
             Explore Our Services
           </button> */}
