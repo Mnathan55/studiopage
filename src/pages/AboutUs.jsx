@@ -6,7 +6,7 @@ import ourTeam from "../assets/images/our_team.jpeg";
 
 const AboutUs = () => {
   return (
-    <section className="bg-gray-50 text-gray-800">
+    <section className="bg-[#efeae3] text-gray-800">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16 text-center max-w-4xl">
         <h1 className="text-md md:text-lg font-bold mb-6 text-gray-900">
@@ -74,7 +74,7 @@ const AboutUs = () => {
       </div>
 
       {/* Goals: Mission, Vision, Plans */}
-      <div className="bg-white py-16">
+      <div className="bg-[#efeae3] py-16">
         <div className="container mx-auto px-4 max-w-6xl grid md:grid-cols-3 gap-10 text-center">
           <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition duration-300">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">

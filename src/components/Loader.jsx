@@ -40,7 +40,7 @@ const Loader = () => {
         <h1
           key={index}
           style={{ textTransform: "uppercase" }}
-          className="absolute text-[4vw] bg-gradient-to-r from-orange-600 to-orange-400 text-transparent bg-clip-text uppercase"
+          className="absolute text-[6vw] md:text-[4vw] bg-gradient-to-r from-orange-600 to-orange-400 text-transparent bg-clip-text uppercase"
         >
           {service}
         </h1>

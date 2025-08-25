@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <footer className="relative w-full overflow-hidden z-0">
-      <div className="footers relative w-full bg-[#111] overflow-hidden flex flex-col">
+      <div className="footers relative w-full bg-[#000] overflow-hidden flex flex-col">
         {/* Footer Top */}
         <div className="footer-top flex flex-col md:flex-row justify-between px-[6vw] py-[4vw] gap-6">
           <div className="left flex flex-col gap-4">

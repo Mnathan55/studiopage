@@ -1,35 +1,38 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/images/Logo-transparent.png";
 
 export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const location = useLocation();
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
+    { name: "Home", path: "/", bg: "#efeae3" },
+    { name: "About", path: "/about", bg: "#efeae3" },
+    { name: "Services", path: "/services", bg: "#efeae3" },
+    { name: "Contact", path: "/contact", bg: "#ff4500" },
   ];
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 backdrop-blur-3xl">
+    <header className="w-full h-[74px] fixed top-0 left-0 z-50 backdrop-blur-3xl">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <Link to="/" className="text-black font-bold text-xl">
-          LOGO
+          <img src={logo} alt="DafliTech" className="h-17 overflow-hidden" />
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-4">
+        <nav className="hidden md:flex space-x-4 nav-links">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`relative overflow-hidden border bg-[#efeae3] border-gray-400 rounded-full px-6 py-2 font-medium transition-colors z-10 ${
+              className={`relative overflow-hidden border bg-[${
+                link.bg
+              }] border-gray-400 rounded-full px-6 py-2 font-medium transition-colors z-10 ${
                 location.pathname === link.path
                   ? "text-white bg-black"
-                  : "text-gray-800 hover:bg-black hover:text-white"
+                  : "text-gray-800"
               }`}
             >
               {link.name}
@@ -71,16 +74,18 @@ export default function Navbar() {
             </button>
           </div>
 
-          <nav className="flex flex-col gap-4 text-lg font-medium">
+          <nav className="flex flex-col gap-4 text-lg font-medium nav-links">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsSidebarOpen(false)}
-                className={`relative overflow-hidden border bg-[#efeae3] border-gray-400 rounded-full px-6 py-2 font-medium transition-colors z-10 ${
+                className={`relative overflow-hidden border bg-[${
+                  link.bg
+                }] border-gray-400 rounded-full px-6 py-2 font-medium transition-colors z-10 ${
                   location.pathname === link.path
                     ? "text-white bg-black"
-                    : "text-gray-800 hover:bg-black hover:text-white"
+                    : "text-gray-800 "
                 }`}
               >
                 {link.name}
