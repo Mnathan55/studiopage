@@ -27,9 +27,9 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  /* if (showLoader) {
+  if (showLoader) {
     return <Loader />; // only show loader (nothing else yet)
-  } */
+  }
   return (
     <Router>
       <SmoothScroll>
