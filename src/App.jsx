@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
 import SmoothScroll from "./lib/SmoothScroll";
+import Clients from "./pages/Clients";
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/clients" element={<Clients />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
