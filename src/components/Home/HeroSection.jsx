@@ -1,29 +1,22 @@
 import ClientSection from "../ClientSection";
 import InfiniteRoll from "../InfiniteRoll";
+import DafliTechLogo from "./DafliTechLogo";
 
 export default function HeroSection() {
   return (
-    <section className="relative hero min-h-[60vh] md:min-h-[100vh] flex flex-col items-end border-b border-gray-300/30 overflow-hidden pb-10 md:pb-20">
+    <section className="relative hero min-h-[60vh] md:min-h-[100vh] flex flex-col items-end border-b border-gray-300/30 overflow-hidden pb-10 md:pb-0">
       {/* Wrapper for left + right */}
-      <div className="w-full flex flex-col-reverse md:flex-row items-start md:items-end justify-between gap-8 md:gap-16 mt-20 md:mt-[30vh] px-4 sm:px-10 lg:px-16">
+      <div className="w-full flex flex-col md:flex-row items-start md:items-end justify-between px-4 sm:px-10 lg:px-16">
         {/* Left: Intro Text */}
         <div
           id="animation"
-          className="z-10 w-full md:w-1/2 flex items-end justify-start text-left"
+          className="z-10 w-full md:w-1/2 flex items-center justify-center"
         >
-          <p className="text-sm sm:text-lg md:text-xl lg:text-2xl max-w-xl leading-relaxed text-black drop-shadow-sm">
-            DafilTech is a multi-disciplinary
-            <br />
-            studio focused on creating
-            <br />
-            unique, end-to-end experiences
-            <br />
-            and environments.
-          </p>
+          <DafliTechLogo />
         </div>
 
         {/* Right: Hero Content */}
-        <div className="w-full md:w-1/2 flex flex-col items-end gap-6 z-10">
+        <div className="w-full md:w-1/2 flex flex-col items-end gap-6 z-10 mt-10 md:mt-[30vh]">
           <div className="hero space-y-3 sm:space-y-4">
             <h1 className="text-[clamp(4rem,9vw,6rem)] text-right leading-[0.85] font-[neuM] tracking-[-3px] text-[#0b0500] pr-[2vw]">
               Design

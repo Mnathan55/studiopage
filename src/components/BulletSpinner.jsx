@@ -15,7 +15,7 @@ export default function BulletSpinner({ circleColor }) {
   }, []);
 
   return (
-    <div className="relative h-[clamp(12px,4vw,40px)] w-[clamp(12px,4vw,40px)] mx-[clamp(12px,3vw,28px)] flex justify-center items-center">
+    <div className="relative h-[50px] w-[50px] mx-[clamp(12px,3vw,28px)] flex justify-center items-center">
       {/* Rotating dashed border */}
       <div
         ref={borderRef}

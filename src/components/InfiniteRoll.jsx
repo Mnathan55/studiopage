@@ -12,10 +12,10 @@ const services = [
 
 function RollerRow() {
   return (
-    <div className="flex items-center whitespace-nowrap mt-[5vh] md:mt-[25vh]">
+    <div className="flex items-center whitespace-nowrap">
       {services.map((service, i) => (
-        <div key={i} className="flex items-center">
-          <h2 className="text-black inline-block font-bold uppercase tracking-tight text-[clamp(1.5rem,8vw,4.5rem)] leading-none">
+        <div key={i} className="flex items-center mr-8">
+          <h2 className="text-black font-bold uppercase tracking-tight text-[clamp(1.5rem,8vw,4.5rem)] leading-none">
             {service}
           </h2>
           <BulletSpinner circleColor="bg-orange-600" />
@@ -27,9 +27,9 @@ function RollerRow() {
 
 export default function InfiniteRoll() {
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full py-10 flex justify-center items-center overflow-hidden">
       {/* Track: two identical halves for seamless loop */}
-      <div className="animate-marquee-x inline-flex">
+      <div className="inline-flex animate-marquee-x">
         <RollerRow />
         <RollerRow aria-hidden="true" />
       </div>

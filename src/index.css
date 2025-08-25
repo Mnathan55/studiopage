@@ -89,3 +89,74 @@ body {
     animation-iteration-count: 1;
   }
 }
+
+
+.cube{
+  z-index: 10;
+  background-color: #fff;
+}
+
+/* General Styling for Cube Faces */
+.cube-face-top {
+  fill: url(#grad-top);
+  stroke: #000;
+  stroke-width: 1;
+}
+
+.cube-face-left {
+  fill: url(#grad-left);
+  stroke: #000;
+  stroke-width: 1;
+}
+
+.cube-face-right {
+  fill: url(#grad-right);
+  stroke: #000;
+  stroke-width: 1;
+}
+
+.line2 {
+  stroke-dasharray: 9, 9;
+  stroke-linecap: round;
+  fill: none;
+  z-index: 20;
+  animation: move-dashed-line 4s linear infinite;
+}
+
+.line-thick {
+  stroke-width: 2;
+  z-index: 30;
+}
+
+.line-thin {
+  stroke-width: 1;
+  z-index: 30;
+}
+
+.cube-wire {
+  fill: white;
+  stroke: #000;
+  stroke-width: 1;
+}
+
+/* Keyframes for moving dashed lines */
+@keyframes move-dashed-line {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -1000;
+  }
+}
+
+/* Cube Hover Effect */
+.cube:hover {
+  
+  transition: transform 0.2s ease-in-out;
+  filter: brightness(1.5); /* Increased brightness on hover */
+}
+
+.cube-wire:hover {
+  stroke: #002fff; /* Red color when hovered */
+  transition: stroke 0.3s ease;
+}
