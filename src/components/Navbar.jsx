@@ -15,14 +15,14 @@ export default function Navbar() {
 
   return (
     <header className="w-full h-[74px] fixed top-0 left-0 z-50 backdrop-blur-3xl">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4">
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-black font-bold text-xl">
-          <img src={logo} alt="DafliTech" className="h-17 overflow-hidden" />
+        <Link to="/" className="text-black font-bold text-xl overflow-hidden">
+          <img src={logo} alt="DafliTech" className="h-18" />
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-4 nav-links">
+        <nav className="hidden md:flex space-x-4 nav-links px-6 py-4">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -42,7 +42,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-black text-2xl focus:outline-none"
+          className="md:hidden text-black text-2xl focus:outline-none px-6 py-4"
           onClick={() => setIsSidebarOpen(true)}
         >
           ☰

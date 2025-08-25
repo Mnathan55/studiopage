@@ -26,7 +26,7 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-24 bg-[#efeae3]">
       <div className="container mx-auto px-6 md:px-12 flex flex-col gap-12">
         {/* Header */}
         <div className="text-center md:text-left">

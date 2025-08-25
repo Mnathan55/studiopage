@@ -5,11 +5,11 @@ import AboutUs from "./pages/AboutUs";
 import ScrollToTop from "./components/ScrollToTop";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-import { useEffect, useState } from "react";
-import Loader from "./components/Loader";
+/* import { useEffect, useState } from "react";
+import Loader from "./components/Loader"; */
 
 const App = () => {
-  const [showLoader, setShowLoader] = useState(true);
+  /* const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
     const hasVisited = localStorage.getItem("hasVisited");
@@ -27,7 +27,7 @@ const App = () => {
 
   if (showLoader) {
     return <Loader />; // only show loader (nothing else yet)
-  }
+  } */
   return (
     <Router>
       <Layout>
