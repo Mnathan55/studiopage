@@ -24,7 +24,7 @@ const App = () => {
       // Set a flag so loader won't show again
       localStorage.setItem("hasVisited", "true");
     }
-    const timer = setTimeout(() => setShowLoader(false), 6250); // match GSAP animation duration
+    const timer = setTimeout(() => setShowLoader(false), 5000); // match GSAP animation duration
     return () => clearTimeout(timer);
   }, []);
 

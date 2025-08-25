@@ -14,7 +14,7 @@ const Loader = () => {
         opacity: 1,
         duration: 0.6,
         stagger: {
-          each: 1.25, // 1 second delay between each heading
+          each: 1, // 1 second delay between each heading
           yoyo: true,
           repeat: 1, // fade in then fade out
         },
