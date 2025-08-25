@@ -7,6 +7,8 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
+import SmoothScroll from "./lib/SmoothScroll";
+
 
 const App = () => {
   const [showLoader, setShowLoader] = useState(true);
@@ -30,6 +32,7 @@ const App = () => {
   }
   return (
     <Router>
+      <SmoothScroll>
       <Layout>
         <ScrollToTop />
         <Routes>
@@ -39,6 +42,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
+      </SmoothScroll>
     </Router>
   );
 };

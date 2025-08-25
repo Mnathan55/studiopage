@@ -53,14 +53,14 @@ export default function Navbar() {
       <>
         {/* Overlay */}
         <div
-          className={`fixed md:hidden inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
+          className={`fixed h-screen w-full md:hidden inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
             isSidebarOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
           onClick={() => setIsSidebarOpen(false)}
         />
         {/* Sidebar Panel */}
         <div
-          className={`fixed top-0 right-0 h-[100dvh] w-[80%] z-50 bg-white p-6 shadow-lg transform transition-transform duration-500 ease-out ${
+          className={`fixed top-0 right-0 h-[100dvh] w-[80%] z-50 bg-[#efeae3] p-6 shadow-lg transform transition-transform duration-500 ease-out ${
             isSidebarOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >

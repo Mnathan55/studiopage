@@ -3,12 +3,12 @@ import { FaClock, FaMagic, FaHandshake, FaLayerGroup } from "react-icons/fa";
 
 const benefits = [
   {
-    icon: <FaClock size={28} className="text-orange-500" />,
+    icon: <FaClock size={28} className="text-black" />,
     title: "Time zones ain’t no thing",
     desc: "Wherever you are in the world, you’ll feel like we’re right around the corner. With 12 years of experience, our business processes are seamless and time differences don’t matter.",
   },
   {
-    icon: <FaMagic size={28} className="text-orange-500" />,
+    icon: <FaMagic size={28} className="text-black" />,
     title: "Impossible? We’re on it",
     desc: "“Impossible” simply does not exist in our vocabulary. We develop products exactly as they were at the design stage, no simplifications, no shortcuts, no BS.",
   },
