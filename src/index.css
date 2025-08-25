@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #efeae3;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Sticky navbar */
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all ease-in-out 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff !important;
+}
+
+.nav-links a:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+@keyframes goofy1 {
+  from { transform: translate(-5%, -5%); }
+  to { transform: translate(5%, 5%); }
+}
+@keyframes goofy2 {
+  from { transform: translate(-10%, -10%); }
+  to { transform: translate(5%, 5%); }
+}
+@keyframes goofy3 {
+  from { transform: translate(-10%, -10%); }
+  to { transform: translate(5%, 5%); }
+}
+
+/* Custom infinite scroll animation */
+@keyframes marquee-x {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Utility class to use in JSX */
+.animate-marquee-x {
+  animation: marquee-x 20s linear infinite;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-x {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
+}
